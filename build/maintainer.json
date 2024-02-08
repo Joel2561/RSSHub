@@ -1525,7 +1525,9 @@
     "/crossbell/notes/source/:source": [
         "DIYgod"
     ],
-    "/cs/news/:caty": [],
+    "/cs/zzkx": [
+        "nczitzk"
+    ],
     "/csdn/blog": [
         "Jkker"
     ],
@@ -4442,6 +4444,9 @@
         "CaoMeiYouRen"
     ],
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
+        "CaoMeiYouRen"
+    ],
+    "/mihoyo/bbs/timeline": [
         "CaoMeiYouRen"
     ],
     "/mihoyo/bbs/user-post/:uid": [
@@ -7697,7 +7702,7 @@
     "/zhihu/timeline": [
         "SeanChao"
     ],
-    "/zhihu/topic/:topicId": [
+    "/zhihu/topic/:topicId/:isTop?": [
         "xyqfer"
     ],
     "/zhihu/weekly": [

@@ -5541,6 +5541,11 @@
         docs:"https://docs.rsshub.app/routes/social-media#crossbell",
         source:"/*",
         target:"/crossbell/notes/source/xlog" } ] },
+  "cs.com.cn":{ _name:"中证网",
+    ".":[ { title:"中证快讯",
+        docs:"https://docs.rsshub.app/routes/finance#zhong-zheng-wang-zhong-zheng-kuai-xun",
+        source:[ "/sylm/jsbd/" ],
+        target:"/cs/zzkx" } ] },
   "csdn.net":{ _name:"CSDN",
     blog:[ { title:"博客",
         docs:"https://docs.rsshub.app/routes/blog#csdn",
@@ -12786,7 +12791,11 @@
         target:(params, url) => {
             const uid = new URL(url).searchParams.get('id');
             return `/mihoyo/bbs/user-post/${uid}`;
-        } } ],
+        } },
+      { title:"米游社 - 用户关注动态",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/timeline",
+        target:"/mihoyo/bbs/timeline" } ],
     sr:[ { title:"崩坏：星穹铁道 - 新闻",
         docs:"https://docs.rsshub.app/routes/game##mi-ha-you",
         source:"/news",
@@ -12840,7 +12849,11 @@
         target:(params, url) => {
             const uid = new URL(url).searchParams.get('id');
             return `/mihoyo/bbs/user-post/${uid}`;
-        } } ] },
+        } },
+      { title:"米游社 - 用户关注动态",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/timeline",
+        target:"/mihoyo/bbs/timeline" } ] },
   "mindmeister.com":{ _name:"MindMeister",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/routes/study#mindmeister",
